@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminLoginRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2f3542; -fx-border-color: #ffffff; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminLoginController">
+   <children>
+      <Label layoutX="24.0" layoutY="28.0" prefHeight="81.0" prefWidth="563.0" text="BOOK MANAGEMENT SYSTEM" textAlignment="RIGHT" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Arial Bold" size="37.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFieldAdminName" alignment="CENTER" layoutX="212.0" layoutY="158.0" promptText="Admin Name" style="-fx-background-color: #57606f;">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtFieldPasswd" alignment="CENTER" layoutX="212.0" layoutY="200.0" promptText="Password" style="-fx-background-color: #57606f;">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </TextField>
+      <JFXButton buttonType="RAISED" layoutX="252.0" layoutY="265.0" onAction="#btnAdminLogin" prefHeight="27.0" prefWidth="107.0" style="-fx-background-color: #a4b0be; -fx-background-radius: 30;" text="Log in">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblNoties" layoutX="212.0" layoutY="235.0" prefHeight="17.0" prefWidth="188.0" textFill="RED" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AdminMainPageRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2f3542; -fx-border-color: #ffffff; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Admin_MainMenuController">
+   <children>
+      <Label layoutX="24.0" layoutY="28.0" prefHeight="81.0" prefWidth="563.0" text="BOOK MANAGEMENT SYSTEM" textAlignment="RIGHT" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Arial Bold" size="37.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="222.0" layoutY="137.0" onAction="#btnUsers" prefHeight="45.0" prefWidth="156.0" style="-fx-background-color: #a4b0be; -fx-background-radius: 30;" text="USERS">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="213.0" layoutY="209.0" onAction="#btnBokkCategory" prefHeight="45.0" prefWidth="175.0" style="-fx-background-color: #a4b0be; -fx-background-radius: 30;" text="Book Categories">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="222.0" layoutY="279.0" onAction="#btnBooks" prefHeight="45.0" prefWidth="156.0" style="-fx-background-color: #a4b0be; -fx-background-radius: 30;" text="Books">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
