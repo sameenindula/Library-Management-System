@@ -1,0 +1,104 @@
+CREATE TABLE books (
+    Book_ID INT AUTO_INCREMENT PRIMARY KEY,
+    Book_Name VARCHAR(100),
+    Author VARCHAR(50),
+    Publish_Date DATE,
+    Availability CHAR(1),
+    User_ID INT,
+    Category_ID INT,
+    Released_Date DATE,
+    Fine VARCHAR(50)
+);
+
+CREATE TABLE categories (
+    Category_ID INT AUTO_INCREMENT PRIMARY KEY,
+    Books_Category VARCHAR(50),
+    Qty_Of_Books INT,
+    Pairs_of_Books INT
+);
+
+CREATE TABLE users (
+    User_ID INT AUTO_INCREMENT PRIMARY KEY,
+    User_Name VARCHAR(50),
+    Address VARCHAR(100),
+    Contact_Number VARCHAR(15),
+    Join_Date DATE
+);
+
+
+INSERT INTO books (Book_Name, Author, Publish_Date, Availability, User_ID, Category_ID, Released_Date, Fine) VALUES
+('Book 2', 'Author B', '2024-01-02', 'N', 2, 2, '2024-08-03', 'Rs35'),
+('Book 3', 'Author C', '2024-01-03', 'N', 3, 3, '2024-07-03', 'Rs190'),
+('Book 6', 'Author F', '2024-01-06', 'N', 6, 2, '2024-08-03', 'Rs35'),
+('Book 7', 'Author G', '2024-01-07', 'N', 7, 2, '2024-08-03', 'Rs35'),
+('Book 8', 'Author H', '2024-01-08', 'N', 8, 3, '2024-08-03', 'Rs35'),
+('Book 9', 'Author I', '2024-01-09', 'N', 9, 4, '2024-08-03', 'Rs35'),
+('Book 10', 'Author J', '2024-01-10', 'N', 10, 5, '2024-08-20', 'Rs0'),
+('Book 11', 'Author K', '2024-02-01', 'N', 11, 1, '2024-07-11', 'Rs150'),
+('Book 12', 'Author L', '2020-02-02', 'Y', NULL, 2, NULL, '0.00'),
+('Book 13', 'Author M', '2020-02-03', 'Y', NULL, 3, NULL, '0.00'),
+('Book 14', 'Author N', '2020-02-04', 'Y', NULL, 4, NULL, '0.00'),
+('Book 15', 'Author O', '2020-02-05', 'Y', NULL, 5, NULL, '0.00'),
+('Book 16', 'Author P', '2020-02-06', 'Y', NULL, 1, NULL, '0.00'),
+('Book 17', 'Author Q', '2020-02-07', 'Y', NULL, 2, NULL, '0.00'),
+('Book 18', 'Author R', '2020-02-08', 'Y', NULL, 3, NULL, '0.00'),
+('Book 19', 'Author S', '2020-02-09', 'Y', NULL, 4, NULL, '0.00'),
+('Book 20', 'Author T', '2020-02-10', 'Y', NULL, 5, NULL, '0.00'),
+('Book 21', 'Author U', '2020-03-01', 'Y', NULL, 1, NULL, '0.00'),
+('Book 22', 'Author V', '2020-03-02', 'Y', NULL, 2, NULL, '0.00'),
+('Book 23', 'Author W', '2020-03-03', 'Y', NULL, 3, NULL, '0.00'),
+('Book 24', 'Author X', '2020-03-04', 'Y', NULL, 4, NULL, '0.00'),
+('Book 25', 'Author Y', '2020-03-05', 'Y', NULL, 5, NULL, '0.00'),
+('Book 26', 'Author Z', '2020-03-06', 'Y', NULL, 1, NULL, '0.00'),
+('Book 27', 'Author AA', '2020-03-07', 'Y', NULL, 2, NULL, '0.00'),
+('Book 28', 'Author AB', '2020-03-08', 'Y', NULL, 3, NULL, '0.00'),
+('Book 29', 'Author AC', '2020-03-09', 'Y', NULL, 4, NULL, '0.00'),
+('Book 30', 'Author AD', '2020-03-10', 'Y', NULL, 5, NULL, '0.00'),
+('Book 31', 'Author AE', '2020-04-01', 'Y', NULL, 1, NULL, '0.00'),
+('Book 32', 'Author AF', '2020-04-02', 'Y', NULL, 2, NULL, '0.00'),
+('Book 33', 'Author AG', '2020-04-03', 'Y', NULL, 3, NULL, '0.00'),
+('Book 34', 'Author AH', '2020-04-04', 'Y', NULL, 4, NULL, '0.00'),
+('Book 35', 'Author AI', '2020-04-05', 'Y', NULL, 5, NULL, '0.00'),
+('Book 36', 'Author AJ', '2020-04-06', 'Y', NULL, 1, NULL, '0.00'),
+('Book 37', 'Author AK', '2020-04-07', 'Y', NULL, 2, NULL, '0.00'),
+('Book 38', 'Author AL', '2020-04-08', 'Y', NULL, 3, NULL, '0.00'),
+('Book 39', 'Author AM', '2020-04-09', 'Y', NULL, 4, NULL, '0.00'),
+('Book 40', 'Author AN', '2020-04-10', 'Y', NULL, 5, NULL, '0.00'),
+('Book 41', 'Author AO', '2020-05-01', 'Y', NULL, 1, NULL, '0.00'),
+('Book 42', 'Author AP', '2020-05-02', 'Y', NULL, 2, NULL, '0.00'),
+('Book 43', 'Author AQ', '2020-05-03', 'Y', NULL, 3, NULL, '0.00'),
+('Book 44', 'Author AR', '2020-05-04', 'Y', NULL, 4, NULL, '0.00'),
+('Book 45', 'Author AS', '2020-05-05', 'Y', NULL, 5, NULL, '0.00'),
+('Book 46', 'Author AT', '2020-05-06', 'Y', NULL, 1, NULL, '0.00'),
+('Book 47', 'Author AU', '2020-05-07', 'Y', NULL, 2, NULL, '0.00'),
+('Book 48', 'Author AV', '2020-05-08', 'Y', NULL, 3, NULL, '0.00'),
+('Book 49', 'Author AW', '2020-05-09', 'Y', NULL, 4, NULL, '0.00'),
+('Book 50', 'Author AX', '2020-05-10', 'Y', NULL, 5, NULL, '0.00'),
+('Book 51', 'Author', '2020-05-10', 'Y', NULL, 5, NULL, '0.00');
+
+
+INSERT INTO categories (Books_Category, Qty_Of_Books, Pairs_of_Books) VALUES
+('Fiction', 10, 2),
+('Non-Fiction', 10, 2),
+('Science Fiction', 10, 2),
+('Fantasy', 10, 2),
+('BiographyBook', NULL, NULL);
+
+
+INSERT INTO users (User_Name, Address, Contact_Number, Join_Date) VALUES
+('Alice Johnson', '123 Maple Street', '123-456-7890', '2022-01-01'),
+('Bob Smithgtt', '456 Oak Avenue', '234-567-8901', '2022-01-02'),
+('Charlie Brown', '789 Pine Road', '345-678-9012', '2022-01-03'),
+('David Wilson', '101 Birch Lane', '456-789-0123', '2022-01-03'),
+('Eva Green', '202 Elm Street', '567-890-1234', '2022-01-05'),
+('Fiona White', '303 Cedar Drive', '678-901-2345', '2022-01-06'),
+('George Black', '404 Spruce Circle', '789-012-3456', '2022-01-07'),
+('Hannah Blue', '505 Redwood Blvd', '890-123-4567', '2022-01-08'),
+('Ian Gray', '606 Willow Terrace', '901-234-5678', '2022-01-09'),
+('Jane Pink', '707 Ash Court', '012-345-6789', '2022-01-10'),
+('amal', 'aa', 'qwd', '2022-01-10'),
+('sameen', 'hakmana', '0412343', '2024-08-23'),
+('mahesh', 'kegall', '65432', '2024-02-21'),
+('sam', 'hakmana', '1348134', '2024-04-22'),
+('sam', 'dsa;k', 'afs', '2000-02-11');
+
