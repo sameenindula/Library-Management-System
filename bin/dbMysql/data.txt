@@ -1,5 +1,5 @@
 CREATE DATABASE librarydb;
-
+USE librarydb;
 CREATE TABLE books (
     Book_ID INT AUTO_INCREMENT PRIMARY KEY,
     Book_Name VARCHAR(100),
